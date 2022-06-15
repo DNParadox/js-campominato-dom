@@ -1,0 +1,61 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    text-align: center;
+}
+
+/* Main */
+main {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+#griglia {
+    background-color: lightcoral;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.square {
+    background-color: red;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#griglia.easy .square {
+    width: calc(100% / 10 );
+    height: calc(100% / 10 );
+
+}
+
+#griglia.hard .square {
+    width: calc(100% / 9 );
+    height: calc(100% / 9 );
+
+}
+
+#griglia.crazy .square {
+    width: calc(100% / 7 );
+    height: calc(100% / 7 );
+
+}
+
+span {
+}
